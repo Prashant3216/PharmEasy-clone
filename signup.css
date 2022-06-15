@@ -1,0 +1,30 @@
+#logo{
+    width: 100%;
+    margin-top: -10px;
+   background-color: teal;
+   /* border: 1px solid blue; */
+}
+#logo1{
+   margin-left: 600px;
+}
+#number{
+    height: 40px;
+    width: 500px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+#form{
+    margin-left: 500px;
+}
+#btn{
+    height: 45px;
+    width: 500px;
+    background-color: teal;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#search{
+   
+}
