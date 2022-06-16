@@ -1,5 +1,5 @@
 let slideIndex = 0;
-
+// manual showSlide
 function carosual(val) {
   let slides = document.getElementsByClassName("slide1502");
   let dots = document.getElementsByClassName("dots1506");
@@ -24,8 +24,10 @@ let plusSlide = (n) => {
   carosual((slideIndex += n));
 };
 let currentSlide = (n) => {
-  carosual(slideIndex=n);
+  carosual((slideIndex = n));
 };
+
+// automatic showSlide
 
 let showSlide = () => {
   let slides = document.getElementsByClassName("slide1502");
