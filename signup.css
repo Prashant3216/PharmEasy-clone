@@ -1,11 +1,13 @@
 #logo{
     width: 100%;
     margin-top: -10px;
-   background-color: teal;
+   background-color: #10847e;
    /* border: 1px solid blue; */
 }
 #logo1{
    margin-left: 600px;
+   width: 300px;
+   height: 100px;
 }
 #number{
     height: 40px;
@@ -25,6 +27,68 @@
     font-size: 20px;
     border-radius: 5px;
 }
-#search{
-   
+.signup-box{
+    width: 348px;
+    height: 550px;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 3px;
 }
+h1{
+    text-align: center;
+    margin-left: 15px;
+    padding-top: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-rendering: optimizeLegibility;
+    padding-bottom: 4px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.2;
+    color: teal;
+}
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: Arial,sans-serif;
+}
+form input{
+    width: 500px;
+    height:35px;
+    padding: 3px;
+    border-radius: 10px;
+    border: 1px solid teal;
+    outline: none;
+    box-sizing: border-box;
+    text-align: center;
+}
+input[type="submit"]{
+    width: 500px;
+    margin-top: 20px;
+    height:35px;
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    background-color: teal;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+    margin-left: 50px;
+    padding-top: 20px;
+    font-size: 16px; 
+}
+p a{
+     text-decoration: none;
+    color: red;
+    cursor: pointer;
+}
+
+
+
+    

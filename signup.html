@@ -6,19 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PharmEasy</title>
     <link rel="stylesheet" href="signup.css">
+    <script src="https://kit.fontawesome.com/35c2cdb561.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="logo"> 
-        <img id="logo1" src="logo.jpeg" alt="">
+        <img id="logo1" src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="">
     </div>
-    <div class="container"> 
-        <form id="form">
-            <h1>Quick Login / Register</h1>
-            <input id="number" type="number" placeholder="Enter your phone number">
-            <br>
-            <button id="btn">Continue</button>
-            <p> By clicking continue,you agree with our <b style="color:teal;">Privacy Policy</b></p>
+    <div id="signup-box">
+        <h1>Welcome to PharmEasy</h1>
+        <form action="" id="form">
+            <label for="">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your Name" required>
+            <label for="">Email</label>
+            <input type="text" id="email" placeholder="Enter your Email" required>
+            <label for="">Create Passowrd</label>
+            <input type="text" id="password" placeholder="Create Passowrd" required>
+            <label for="">Mobile number</label>
+            <input type="text" id="mobile" name="idNumber" pattern="[0-9]{10}" placeholder="Enter 10-Digit Mobile Number" required>
+            <input type="submit" value="Create Account" id="submit">
         </form>
     </div>
+    <p>Alrady have an Account? <a href="signin.html">SignIn</a> </p>
 </body>
 </html>
+<script src="signup.js">
+    
+</script>
