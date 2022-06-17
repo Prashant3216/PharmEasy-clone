@@ -20,7 +20,7 @@ function signInData(){
     else if(ravan.email==comeon.email && ravan.password==comeon.password){
         alert("SiginIn Successfully");
         
-        window.location.href="navbar.html";  
+        window.location.href="./homepage/index.html";  
     }
     else{
         alert("User Doesn't exists!!");

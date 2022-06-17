@@ -35,6 +35,9 @@ button.addEventListener("click",function(){
 })
 var button1=document.createElement("button");
 button1.innerText="View Cart  >";
+button1.addEventListener("click",function(){
+    window.location.href="../Product Page pharmeasy/cart.html"
+})
 
 
 
@@ -50,7 +53,7 @@ container.append(divimage,divdetails,buttondiv,viewcartdiv);
 
 function addtocart(data){
     alert("Product added to Cart");
-    window.location.href="./cart.html";
+    // window.location.href="./cart.html";
     var x=data;
     localStorage.setItem("adddata",JSON.stringify(x));
 }

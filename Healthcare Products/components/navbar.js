@@ -2,7 +2,7 @@ function navbar (){
     return `
     <div id="navbar">
     <div id="box1">
-        <a href=""><img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt=""></a>
+        <a href="../homepage/index.html"><img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt=""></a>
     </div>
     <div id="box2">
         <div id="box3">
