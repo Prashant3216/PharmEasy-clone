@@ -13,8 +13,8 @@ function navbar (){
 
         <div id="box4">
             <div id="box5">
-                <div><a href="">Order Medicine</a></div>
-                <div> <a href="">Healthcare Products</a> </div>
+                <div><a href="../Order Medicine/Ordermedicine.html">Order Medicines</a></div>
+                <div> <a href="./Healthcareproducts.html">Healthcare Products</a> </div>
                 <div> <a href="">Lab Test</a> </div>
                 <div> <a href="">RTPCR</a> </div>
             </div>

@@ -37,9 +37,10 @@
     justify-content: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #dfe3e6;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 20px;
     margin-bottom: 20px;
+    margin-left: -100px;
 
 }
 #box610{
@@ -66,7 +67,9 @@
 #i601{
     color: #10847E;
 }
-
+#box608>img{
+    width: 80%;
+}
 
 /* ***********************0**************************** */
 
