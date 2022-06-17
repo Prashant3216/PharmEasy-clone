@@ -12,7 +12,7 @@
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     /> -->
 </head>
-<body onload="set_time()">
+<body  onload="set_time()">
 
 <div id="navcontainer">
         <div id="navbar601">
@@ -72,9 +72,11 @@
                 <h2 id="h602">Search for Medicines / Healthcare Products</h2>
                 <div id="box619">
                     <input type="text" id="input601" placeholder="Enter Pin Code">
-                    <input id="input602" type="text" placeholder="Search for Medicines / Healthcare Products">
+                    <input id="input602" type="text" oninput="debouncing(main,1000)" onclick="show()" placeholder="Search for Medicines / Healthcare Products">
                     <button id="btn603"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
+
+               <div id="box651"></div>
                 
                 
             </div>
@@ -114,23 +116,10 @@
 
     <div id="container604">
         
-        <!-- <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="../Order Medicine/images/comp_3step.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="./images/comp_50lac.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="./images/comp_cod.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="./images/comp_india_covered.jpg" alt=""></div>
-            </div>
-            <div class="swiper-pagination"></div>
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          
-        </div> -->
         <img id="img604" src="" alt="">
 
     </div>
-    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+    
     <!-- *****************************4********************** -->
 
     <div id="container605">
