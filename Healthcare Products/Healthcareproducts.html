@@ -7,12 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="../Healthcare Products/style/healthcare.css">
     <script src="https://kit.fontawesome.com/eb0aa5c85c.js" crossorigin="anonymous"></script>
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
+    
 </head>
-<body>
+<body onload="set_time()">
 
     <div id="header">
        <!-- imported navbar -->
@@ -27,29 +24,9 @@
 <!-- ***********************1************************************ -->
 <!-- Slideshow -->
 <div id="container711">
-        
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide"><img src="../Healthcare Products/images/0c2c1348a87-OneTouch-CB-June22.png" alt=""></div>
-          <div class="swiper-slide"><img src="../Healthcare Products/images/627c570ceec-Plum-M-M.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../Healthcare Products/images/de6cc279933-Upakarma-CB-june.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../Healthcare Products/images/ea0bf711eed-Vicks-cb-may.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../Healthcare Products/images/26d88c347d7-Colgate-Diab.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../Healthcare Products/images/3ab35ad135a-Cremaffin-June-SRP.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../Healthcare Products/images/7076307845f-Johnson-CB-Mar22.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../Healthcare Products/images/8aa83ea6c7e-Moov-June-Coupon.jpg" alt=""></div>
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+    <img id="img604" src="" alt="">
 
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      
-    </div>
 </div>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
 <!-- ********************************2******************************* -->
 
@@ -298,4 +275,12 @@
     
 </body>
 </html>
-<script type="module" src="../Healthcare Products/script/healthcareproducts.js"></script>
+<script src="../Healthcare Products/script/healthcareproducts.js"></script>
+
+<script type="module">
+    
+import navbar from "./components/navbar.js"
+
+let header=document.getElementById("header")
+header.innerHTML=navbar();
+</script>

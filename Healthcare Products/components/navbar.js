@@ -7,7 +7,7 @@ function navbar (){
     <div id="box2">
         <div id="box3">
             <input type="text" id="input601" placeholder="Enter Pin Code">
-            <input id="input602" type="text" placeholder="Search for Medicines / Helthcare Products">
+            <input id="input602" type="text" placeholder="Search for Medicines / Healthcare Products">
             <button id="btn603"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
 
