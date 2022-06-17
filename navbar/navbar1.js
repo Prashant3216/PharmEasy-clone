@@ -1,6 +1,6 @@
 function navbar (){
     return `
-    <div id="navbar">
+    <div id=navbar>
     <div id="box1">
         <a href=""><img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt=""></a>
     </div>
@@ -26,8 +26,7 @@ function navbar (){
             </div>
         </div>
     </div>
-
-</div>
+    </div>
     `
 }
 

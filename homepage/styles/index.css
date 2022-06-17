@@ -1,0 +1,578 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+#slideShow1501 {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+.slide1502 {
+  display: none;
+}
+#prev1503,
+#next1504 {
+  cursor: pointer;
+  font-size: 35px;
+  position: absolute;
+  top: 40%;
+  padding: 0 10px;
+  color: white;
+  font-weight: lighter;
+}
+#prev1503 {
+  left: 0;
+}
+#next1504 {
+  right: 0;
+}
+.slideImg1505 {
+  width: 100%;
+}
+#dotdiv1507 {
+  text-align: center;
+  position: relative;
+  bottom: 30px;
+  /* border: 1px solid black; */
+}
+.dots1506 {
+  border: 1px solid rgb(207, 207, 207);
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: rgb(241, 237, 237);
+  cursor: pointer;
+  /* transition: background-color 0.6s; */
+}
+.active {
+  background-color: #10847e;
+}
+#prev1503:hover,
+#next1504:hover {
+  color: #10847e;
+}
+#box1508 {
+  display: flex;
+  width: 92%;
+  margin: 10px auto;
+  /* border: 1px solid red; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.box1512 {
+  width: 430px;
+  height: 190px;
+  border: 1px solid rgb(193, 192, 192);
+  border-radius: 6px;
+  position: relative;
+  cursor: pointer;
+}
+.box1513 {
+  height: 115px;
+  border-radius: 6px 6px 0 0;
+  width: 100%;
+  background-color: rgba(53, 194, 169, 0.24);
+  display: flex;
+  padding: 30px 0 0 25px;
+  align-items: center;
+  
+}
+.box1509 {
+  width: 150px;
+  height: 28px;
+  background-image: url("https://assets.pharmeasy.in/web-assets/dist/1602b4ce.svg");
+  padding: 5px;
+  font-size: 12px;
+  color: #fff;
+  border-top-left-radius: 6px;
+  font-weight: 700;
+  line-height: 1.5;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.text1511 {
+  font-size: 20px;
+  color: #4f585e;
+  padding-right: 15px;
+  font-weight: 700;
+  line-height: 1.5;
+  z-index: 2;
+}
+.tag1510 {
+  width: 186px;
+  height: 100%;
+  /* border: 1px solid black; */
+  border-top-right-radius: 6px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.tag1510 > img {
+  width: 100%;
+  border-top-right-radius: 6px;
+}
+.button1514 {
+  background-color: #3bb896;
+  border-radius: 6px;
+  padding: 0 25px;
+  border: none;
+  height: 45px;
+  color: #fff;
+  position: absolute;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.2mm;
+  margin: 15px 0 0 25px;
+  cursor: pointer;
+}
+.box1515 {
+  background-color: rgb(247, 238, 223);
+}
+.box1516 {
+  background-color: rgb(224, 240, 247);
+}
+.button1517 {
+  background-color: rgb(255, 118, 13);
+}
+.button1518 {
+  background-color: rgb(6, 183, 227);
+}
+#plus1519 {
+  width: 92%;
+  /* border: 1px solid red; */
+  margin: 80px auto 60px auto;
+  display: flex;
+  background-image: url("https://assets.pharmeasy.in/web-assets/dist/f5c40209.svg");
+  background-color: #a291fa;
+  height: 100px;
+  border-radius: 6px;
+  position: relative;
+}
+#plus1520 {
+  padding: 30px 25px 0 25px;
+  width: 250px;
+}
+#plus1520 > img {
+  width: 100%;
+}
+#plus1522 > img {
+  height: 136px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#plus1521 {
+  display: flex;
+  width: 800px;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+#offer1523 {
+  /* border: 1px solid red; */
+  width: 92%;
+  margin: auto;
+}
+#offer1524 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#offer1526 {
+  display: flex;
+  align-items: center;
+  color: rgb(118, 118, 118);
+}
+#offer1526 > h2,
+#offer1526 > div {
+  padding: 0 10px;
+}
+#offer1527 > h2 {
+  padding: 0 20px;
+  color: #3bb896;
+}
+
+#offer1525 {
+  display: flex;
+  width: 100%;
+   /* flex-wrap: wrap; */
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+.offer1528 {
+  display: flex;
+  padding: 10px;
+  width: 300px;
+  /* height: 100px; */
+  border: 2px solid rgb(184, 182, 182);
+  border-radius: 6px;
+}
+.offer1529 {
+  width: 120px;
+  /* height: 100%; */
+  /* border:1px solid black; */
+}
+.offer1529 > img {
+  width: 100%;
+  height: 100%;
+}
+.offer1530 {
+  max-width: 180px;
+  /* height: 100%; */
+  padding: 10px;
+  /* border: 1px solid red; */
+  font-size: 14px;
+  color: rgb(85, 83, 83);
+}
+#booked1531 {
+  margin: 40px 0;
+  width: 100%;
+  /* height: 300px; */
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  background-color: #d4e2fa;
+  cursor: pointer;
+}
+.booked1532 {
+  width: 420px;
+  /* height: 240px; */
+  /* border: 1px solid black; */
+  padding: 30px 0px 30px 50px;
+  line-height: 30px;
+}
+#booked1533 {
+  /* border: 1px solid black; */
+  width: 1000px;
+  /* height: 240px; */
+  /* flex-wrap: wrap; */
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 70px;
+}
+.booked1534 {
+  width: 310px;
+  /* height: 240px; */
+  border: 2px solid #10847e;
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  line-height: 25px;
+}
+.booked1532 > h2 {
+  color: rgb(88, 86, 86);
+}
+.booked1535 {
+  padding: 0 20px;
+
+  color: rgb(96, 95, 95);
+  letter-spacing: 0.1mm;
+  line-height: 40px;
+}
+.heading1536 {
+  font-size: 16px;
+  color: rgb(69, 58, 58);
+}
+.des1537 {
+  font-size: 14px;
+  color: rgb(120, 120, 120);
+}
+.extra1538 {
+  font-size: 12px;
+  color: rgb(158, 151, 151);
+}
+.booked1534 > img {
+  width: 50px;
+  height: 60px;
+}
+.button1539 {
+  border: none;
+  position: absolute;
+  padding: 10px;
+  border-radius: 6px 0px 0px 6px;
+  right: 0px;
+  background-color: transparent;
+}
+.button1539:hover {
+  cursor: pointer;
+  background-color: #10847e;
+  color: white;
+}
+.button1540 {
+  bottom: 20px;
+}
+#feature1541 {
+  width: 92%;
+  /* border: 1px solid red; */
+  margin: 100px auto 60px auto;
+}
+#feature1542 {
+  /* border: 1px solid black; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+.feature1543 {
+  width: 150px;
+  height: 200px;
+  /* border: 1px solid red; */
+  border-radius: 6px;
+  flex-shrink: none;
+}
+.feature1543 > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+#feature1541 > h2 {
+  color: rgb(115, 112, 112);
+  margin-bottom: 30px;
+}
+#deals1544{
+    width:100%;
+    padding: 2% 4%;
+    /* border: 1px solid red; */
+    height: 250px;
+    background-color: rgb(248, 229, 233);
+}
+#deals1545{
+display: flex;
+align-items: baseline;
+}
+#deals1546{
+    color: rgb(85, 78, 78);
+    margin: 0 60px 0 30px;
+}
+#deals1548{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    /* cursor: pointer; */
+    
+    /* border: 1px solid red; */
+    justify-content: space-between;
+}
+.deals1549{
+    width:230px;
+    /* height: 350px; */
+    /* border: 1px solid black; */
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+.deals1550{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:230px;
+    height: 230px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+}
+.deals1550>img{
+    width:70%;
+    height: 70%;
+
+}
+.dis1551{
+    width:90px;
+    height: 25px;
+    background-image: url("https://assets.pharmeasy.in/web-assets/dist/1602b4ce.svg");
+    border-top-left-radius: 6px;
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 5px 5px;
+    font-size: 13px;
+    color: white;
+}
+.deals1549>p{
+    margin-bottom: 10px;
+    color: rgb(69, 58, 58);
+}
+.deals1549 .dis1552 {
+    color: gray;
+    font-size: 13px;
+}
+.deals1549 .dis1552 span{
+    text-decoration: line-through;
+}
+.deals1549 .dark1553{
+    font-weight: bold;
+}
+#user1555{
+    width:92%;
+    display: flex;
+    margin: 300px auto 60px auto;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    padding: 10px 0px;
+    flex-wrap: wrap;
+}
+.user1556{
+    width:300px;
+}
+.user1556>h1{
+    font-size: 42px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #4f585e;
+}
+.user1556>p{
+    font-size: 18px;
+    /* font-weight: 600; */
+    color: #4f585e;
+}
+.review1557{
+    width: 92%;
+    margin: 10px auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    color: #4f585e;
+    
+    
+}
+.review1558{
+    width:320px;
+    /* border: 1px solid black; */
+    padding: 10px 0px;
+    color: #4f585e;
+}
+.review1559{
+    max-height: 300px;
+    padding: 20px 20px;
+    background: #eafbf2;
+}
+.quote1560{
+    font-size: 60px;
+    color:  #9ec6b1;
+    margin-bottom: -30px;
+}
+.quote1561{
+    font-size: 12px;
+    color: #4f585e;
+}
+#heading1562{
+    margin-left:4%;
+    color: #4f585e;
+}
+#footer1563{
+    width: 100%;
+    height: 300px;
+    padding: 2% 4%;
+    margin: 30px 0 0 0;
+    background-color:  #f2f5f5;
+}
+#footer1564{
+    display: flex;
+    width:320px;
+    justify-content: space-between;
+}
+.footer1565{
+    width: 150px;
+}
+.footer1565>a>img{
+    width: 150px;
+}
+#footer1566{
+    color: #4f585e;
+    margin-bottom: 100px;
+}
+#footer1567{
+    color: #4f585e;
+    margin-bottom: 20px;
+}
+#footer1568{
+    display: flex;
+    width:100%;
+    /* height: 600px; */
+    background-color: #f4f7fb;
+    padding: 2% 4%;
+    justify-content: space-between;
+}
+.footer1569{
+    width:320px;
+    /* border: 1px solid red; */
+    line-height: 35px;
+}
+#footer1573{
+    display: flex;
+    /* width: 320px; */
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+.footer1570{
+    width:70px;
+    /* color: #10847e; */
+    border-radius: 50%;
+     /* border: 1px solid red; */
+    
+
+}
+.footer1570>img{
+    width: 100%;
+    border-radius: 50%;
+
+}
+#Partner1571{
+width: 100%;
+padding: 10px 4% 30px 4%;
+
+/* border: 1px solid red; */
+background-color:  #f4f7fb;
+color:#4f585e;
+line-height: 30px
+}
+#Partner1572{
+    display: flex;
+    width:55%;
+    justify-content: space-between;
+}
+#Partner1572>img{
+    width:50px;
+    height: 25px;
+}
+
+@media all and (max-width:1380px){
+    #offer1525, #booked1533{
+        overflow: scroll; 
+    }
+    #deals1548{
+        overflow-x: scroll;
+    }
+    /* #feature1542{
+        overflow-x: scroll;
+    } */
+}
+@media all and (max-width:685px){
+    .review1558{
+        overflow-x: scroll;
+    }
+}
+#navbar1574 {
+  position: sticky;
+  top: 0px;
+  height: 123px;
+  background-color: #10847e;
+  display: flex;
+  align-items: center;
+  z-index: 200;
+}
