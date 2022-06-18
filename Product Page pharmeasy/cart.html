@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="../navbar/navbar.css">
+    <script src="https://kit.fontawesome.com/eb0aa5c85c.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+       
+   #addcontainer{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 300px;
+    margin-left: 250px;
+    border: 1px solid #4f585e;
+    border-radius: 10px;
+   }
+   #addcontainer>img{
+    width:200px;
+    height: 200px;
+    
+   }
+   #box66{
+    width:50%;
+    
+   }
+   #title{
+    margin-bottom: 20px;
+    color: #4f585e;
+   }
+   #btn1{
+    padding: 10px 15px 10px 15px;
+    margin-top: 20px;
+    background-color:#10847E;
+    border: none;
+    border-radius: 6px;
+    color: white;
+   }
+   #box680{
+    display: flex;
+    /* justify-content: space-around; */
+   }
+   #total{
+    height: 200px;
+    width: 300px;
+    margin-top:40px ;
+    border: 1px solid #4f585e;
+    border-radius: 10px;
+    margin-left: 100px;
+    padding: 10px;
+    
+   }
+   #box681,#box682,#box683{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+   }
+   #footer1563{
+    width: 92%;
+    height: 300px;
+    padding: 2% 4%;
+    margin: 30px 0 0 0;
+    background-color:  #f2f5f5;
+}
+#footer1564{
+    display: flex;
+    width:320px;
+    justify-content: space-between;
+}
+.footer1565{
+    width: 150px;
+}
+.footer1565>a>img{
+    width: 150px;
+}
+#footer1566{
+    color: #4f585e;
+    margin-bottom: 100px;
+}
+#footer1567{
+    color: #4f585e;
+    margin-bottom: 20px;
+}
+#footer1568{
+    display: flex;
+    width:92%;
+    /* height: 600px; */
+    background-color: #f4f7fb;
+    padding: 2% 4%;
+    justify-content: space-between;
+}
+.footer1569{
+    width:320px;
+    /* border: 1px solid red; */
+    line-height: 35px;
+}
+#footer1573{
+    display: flex;
+    /* width: 320px; */
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+.footer1570{
+    width:70px;
+    /* color: #10847e; */
+    border-radius: 50%;
+     /* border: 1px solid red; */
+    
+
+}
+.footer1570>img{
+    width: 100%;
+    border-radius: 50%;
+
+}
+#Partner1571{
+width: 100%;
+padding: 10px 4% 30px 4%;
+
+/* border: 1px solid red; */
+background-color:  #f4f7fb;
+color:#4f585e;
+line-height: 30px
+}
+#Partner1572{
+    display: flex;
+    width:55%;
+    justify-content: space-between;
+}
+#Partner1572>img{
+    width:50px;
+    height: 25px;
+}
+.footer1563{
+    margin-top: 200px;
+}
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+    <div id="box680">
+        <div id="addcontainer"></div>
+        <div id="total">
+            <h2 style="text-align:center;color:#4f585e;margin-top:20px">Order summary</h2>
+            
+            <div id="box681"> <p>Cart Value</p> <p id="p690">RS. 388</p></div>
+            <div id="box682"> <p>Delivery Charges</p>  <p>RS. 75</p> </div>
+            <hr style="margin-top: 20px"></hr>
+            <div id="box683"> <p>Total</p> <p id="p691">RS. 464</p> </div>
+        </div>
+    </div>
+
+    <div class="footer1563">
+
+    </div>
+    
+</body>
+</html>
+<script src="./cart.js"></script>
+<script type="module">
+    
+    import navbar from "../navbar/navbar1.js"
+    
+    let header=document.getElementById("header")
+    header.innerHTML=navbar();
+
+    import footer from "../components/footer.js"
+    let footerdiv=document.querySelector(".footer1563")
+    footerdiv.innerHTML=footer();
+
+</script>

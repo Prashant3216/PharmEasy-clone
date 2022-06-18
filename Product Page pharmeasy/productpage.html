@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./productpage.css">
+    <script src="https://kit.fontawesome.com/eb0aa5c85c.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: #ffffff;
+
+        }
+        #header{
+            position: sticky;
+            top: 0px;
+            height:123px;
+            background-color: #10847E;
+            display:flex;
+            align-items: center;
+        }
+        #navbar{
+            width:90%;
+            margin: auto;
+            height:94px;
+            /* border: 1px solid red; */
+            display: flex;
+
+        }
+        
+        #box11{
+            width:15%;
+
+        }
+        #box2{
+            width:80%;
+        }
+        #box11>a>img{
+            display: block;
+            width: 60%;
+            height: 80px;
+        }
+        #box2>div{
+            /* border:1px solid red; */
+            height:50%;
+        }
+        #box3{
+            display: flex;
+            /* justify-cont; */
+            width:82%;
+            /* margin */
+            /* border:1px solid red; */
+            /* padding:10px; */
+            /* margin-top: 20px; */
+        }
+        #input601{
+            /* margin-left: -10px; */
+            width:30%;
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+            display: block;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #input602{
+            width: 70%;
+            padding:10px;
+            border: none;
+            border-left: 1px solid grey;
+            display: block;
+            padding: 10px;
+            font-size: 16px;
+            
+        }
+
+        #btn603{
+        width:10%;
+        border-bottom-right-radius: 6px;
+        border-top-right-radius: 6px;
+        border: none;
+        font-size: 20px;
+        padding: 10px;
+        color: grey;
+        }
+        #box4{
+            display: flex;
+            
+        }
+        #box4>div{
+            /* border:1px solid blue; */
+            width:50%;
+
+        }
+        #box5{
+            display: flex;
+            justify-content:left;
+            align-items: center;
+            gap:20px;
+        }
+        #box5>div{
+            /* border:1px solid yellow; */
+            font-size: 18px;
+            margin-top: 20px;
+            /* font-weight: bold; */
+
+        }
+        #box6{
+            display: flex;
+            justify-content:right;
+            align-items: center;
+            gap:30px;
+        }
+        #box6>div{
+            /* border:1px solid yellow; */
+            font-size: 18px;
+            margin-top: 20px;
+            /* font-weight: bold; */
+            display: flex;
+            gap:10px;
+            font-weight: bold;
+            color: white;
+
+        }
+        /* footer */
+        #footer1563{
+    width: 100%;
+    height: 300px;
+    padding: 2% 4%;
+    margin: 30px 0 0 0;
+    background-color:  #f2f5f5;
+}
+#footer1564{
+    display: flex;
+    width:320px;
+    justify-content: space-between;
+}
+.footer1565{
+    width: 150px;
+    
+}
+.footer1565>a>img{
+    width: 150px;
+    height: fit-content;
+}
+#footer1566{
+    color: #4f585e;
+    margin-bottom: 100px;
+}
+#footer1567{
+    color: #4f585e;
+    margin-bottom: 20px;
+}
+#footer1568{
+    display: flex;
+    width:100%;
+    /* height: 600px; */
+    background-color: #f4f7fb;
+    padding: 2% 4%;
+    justify-content: space-between;
+}
+.footer1569{
+    width:320px;
+    /* border: 1px solid red; */
+    line-height: 35px;
+}
+#footer1573{
+    display: flex;
+    /* width: 320px; */
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+.footer1570{
+    width:70px;
+    /* color: #10847e; */
+    border-radius: 50%;
+     /* border: 1px solid red; */
+    
+
+}
+.footer1570>img{
+    width: 100%;
+    height: fit-content;
+    border-radius: 50%;
+
+}
+#Partner1571{
+width: 100%;
+padding: 10px 4% 30px 4%;
+
+/* border: 1px solid red; */
+background-color:  #f4f7fb;
+color:#4f585e;
+line-height: 30px
+}
+#Partner1572{
+    display: flex;
+    width:55%;
+    justify-content: space-between;
+}
+#Partner1572>img{
+    width:50px;
+    height: 25px;
+}
+</style>
+    
+    
+</head>
+<body>
+      <div id="header"></div>
+    
+    
+    <div id="container"></div>
+
+    <!-- *****************footer************************ -->
+<div class="footer1563">
+
+</div>
+</body>
+</html>
+<script src="./data.js"></script>
+<script src="./productpage.js"></script>
+<script type="module">
+    import navbar from "./navbar.js"
+    var header=document.querySelector("#header");
+    header.innerHTML=navbar();
+
+    import footer from "../components/footer.js"
+    let footerdiv=document.querySelector(".footer1563")
+    footerdiv.innerHTML=footer();
+</script>
+

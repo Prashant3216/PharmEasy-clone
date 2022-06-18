@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        #offer_000{
+          
+            width: 100%;
+            margin-left: 20px;
+            display: flex;
+            height: auto;
+            
+          
+        }
+        #offer_000 h1{
+            display: inline;
+        }
+     
+        #logoimg_001{
+            
+            width: auto;
+            height: auto;
+           margin-left: 20px;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            /* border: 1px solid black; */
+            display: inline-block;
+            margin-left: 10px;
+          
+        }
+        #logoimg_001>img{
+            width: 50px;
+            height: 20px;
+        }
+     
+        .logoimg_001{
+            width: auto;
+            height: auto;
+           margin-left: 10px;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+           
+            display: inline-block;
+            
+            
+        }
+     
+        .logoimg_001>img{
+            width: 40px;
+            height: 40px;
+           
+            /* padding-bottom: -40px; */
+        }
+        .wallet_002{
+            display: inline;
+            margin-bottom: 40px;
+            margin-left: 3.5%;
+            font-family:  Open Sans,sans-serif;
+            color: #4f585e;
+            font: 16px;
+            font-weight: 700;
+            margin-top: -10px;
+            
+            
+        }
+        .desc_003{
+            margin-left: 3%;
+            vertical-align: baseline;
+            color: #8897a2;
+            font: 12px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        input{
+            
+            justify-content: space-between;
+            margin-left: 2%;
+        }
+        .upi{
+            display: flex;
+        }
+       
+        .upi_img{
+            border-bottom: 1px solid black;
+            margin-left: 40px;
+            width: 400px;
+           
+        }
+        .upi_img>h3{
+            font: 15px;
+            padding: 5px;
+            color: #4F585E;
+            font-family:  Open Sans,sans-serif;
+        }
+        .upi_img>span{
+            
+            font: 10px;
+            
+            color: #8897A2;
+            font-family:  Open Sans,sans-serif;
+        }
+        .upi_img>img{
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .upi_000>img{
+            width: 40px;
+            height: 40px;
+            margin-top: 15px;
+            
+        }
+     
+      
+        #card_details_007{
+           border: 1px solid black;
+           width: 450px;
+           height: 700px;
+        }
+        #pay_button{
+            display: none;
+        }
+        #wallet_desc{
+            background-color: #f2fff8;
+            display: flex;
+            width: 350px;
+           
+            
+        }
+        #offer_tag{
+            font: 15px;
+            padding: 15px;
+            color: #4F585E;
+            font-family:  Open Sans,sans-serif;
+        }
+        #other_option_tag{
+            font: 15px;
+            padding: 15px;
+            color: #4F585E;
+            font-family:  Open Sans,sans-serif;
+        }
+        #card_new{
+            margin: 15px;
+            font: 15px;
+            padding:0px 0px 15px;
+            color: #4F585E;
+            font-family:  Open Sans,sans-serif;
+            border-bottom: 1px solid #dfe3e6;
+            font-weight: 700;
+        }
+
+        #card_details_007{
+            background-color: white;
+            width: 400px;
+            padding:0px 0px 15px 15px;
+            color: #4F585E;
+            font-family:  Open Sans,sans-serif;
+            border-bottom: 1px solid #dfe3e6;
+            display: none;
+            
+        }
+        #card_details_007>input{
+            width: 350px;
+            height: 40px;
+            border-radius: 5px;
+            /* border: 0.5px solid #4F585E ; */
+            
+        }
+        input::placeholder{
+            font-size: 14px;
+            
+            padding: 10px 0 10px 15px;
+            font-family:  Open Sans,sans-serif;
+            box-sizing: border-box;
+            color: #4f585e;
+            border: 0px;
+        }
+        #paytmotion{
+            
+            width: 700px;
+        }
+        #cancel_007{
+            display:none;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            background-color: #ffffff;
+            /* border: 1px solid black; */
+            padding: 15px;
+            color: #8897a2;
+
+            text-align: center;
+        }
+       .card_mini{
+        
+        width: 100%;
+        border-bottom: 0.2px solid #8897A2;
+       }
+       #wallet_007{
+        position: relative;
+        z-index: 2;
+        margin-left: 10%;
+        margin-top: 40px;
+       
+       }
+       #card_box_007{
+        margin-left: 70%;
+        background-color: white;
+        display: flex;
+        position: absolute;
+        z-index: -5;
+        font: 15px;
+       }
+       u{
+        display: block;
+        margin-left:20%;
+        color: #4F585E;
+        font-family:  Open Sans,sans-serif;
+        margin-top: 10px;
+        font-size: 14px;
+        padding-bottom: 20px;
+       }
+       #pricebreak_007{
+        
+        margin-top: 30px;
+      
+       }
+       #pricebreak_007>span{
+        color: #8897A2;
+        font: 16px;
+        font-family:  Open Sans,sans-serif;
+        vertical-align: baseline;
+        font-weight: 700;
+       
+       }
+       #wallet_desc{
+        padding-top: 5px;
+        border-radius: 20px;
+        /* border: 1px solid black; */
+       }
+       .value_box{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        color: #4F585E;
+        font: 16px;
+        font-family:  Open Sans,sans-serif;
+       }
+       #final_007{
+        font: 16px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        color: #4F585E;
+      font-weight: 700;
+        font-family:  Open Sans,sans-serif;
+       }
+       #total_007{
+        background-color: #f2fff8;
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px 0px 10px 10px;
+        color: #3bb896;
+        border: 1px dashed #3bb896;
+        border-radius: 5px;
+       }
+       #Span{
+        color: #3bb896;
+        font-weight: 600;
+        font: 16px;
+        font-family:  Open Sans,sans-serif;
+        margin-left: 8px;
+       }
+       #card_validity{
+        width: 50%;
+        height: 40px;
+        border-radius: 5px;
+        border: 0.5px solid #4F585E ;
+       }
+       #cvv{
+        width: 50%;
+        height: 40px;
+        border-radius: 5px;
+        border: 0.5px solid #4F585E ;
+       }
+       #save_later{
+        font: 5px;
+        height: 15px;
+        background-color: #3bb896;
+       }
+       #place_order_007{
+        width: 100%;
+        padding: 15px 0;
+        background-color: #4f585e;
+        color: #fff;
+        cursor: pointer;
+        align-items: center;
+        font-weight: 700;
+        font-family:  Open Sans,sans-serif;
+        font-size: 15px;
+        border: 0px;
+        border-radius: 5px;
+       }
+       #pay_button{
+        margin-top:10px ;
+        margin-bottom: 10px;
+        padding: 0 20px;
+        background: #10847e;
+        color: #fff;
+        width: auto;
+        height: 45px;
+        border-radius: 6px;
+        border: 0px;
+        font-weight: 700;
+        font-family:  Open Sans,sans-serif;
+        font-size: 15px;
+       }
+       #navbar{
+        width: 102%;
+        height: 100px;
+        margin-top:-8px ;
+        margin-left: -10px;
+        background-color: #10847e;
+       }
+       #navbar>a>img{
+        width: 165px;
+        height: 50.89px;
+        margin-left: 50px;
+        padding-top: 20px;
+       }
+       #secure{
+        color: #fff;
+        font: 16px;
+        font-weight: 700;
+        display: inline;
+        margin-left: 50%;
+        font-family:  Open Sans,sans-serif;
+        margin-top: -10px;
+       }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+       <a href="../homepage/index.html"><img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt=""></a>
+        
+            <div id="secure">
+                100% Secure Payments
+            </div>
+       
+
+    </div>
+   
+    <div id="offer_000">
+      
+        <div id="paytmotion">
+            <h2 id="offer_tag">
+                Offers
+            </h2>
+        <div id="paytm_001" style="display: flex;">
+        
+            <div id="logoimg_001" >
+                <img src="https://cdn.pharmeasy.in/payments/wallet_icons/paytm.png" alt="">
+            </div>
+            <div class="card_mini">
+            <div class="wallet_002">
+                Paytm Wallet | Postpaid
+                <input type="radio"  style="margin-left: 59%;">
+            </div>
+            <div class="desc_003">
+                
+                    Get upto 300 cashback on minimum transaction of Rs.600. Offer allicable once per user.
+                
+            </div>
+            </div>
+        </div>
+        <div id="amazon_001" style="display: flex;margin-top: 15px;">
+            
+            <div class="logoimg_001">
+                <img src="https://cdn.pharmeasy.in/payments/amazonpay_new.png" alt="">
+            </div>
+            
+            <div class="card_mini" >
+
+            <div class="wallet_002"  >
+                Amazon Pay
+                <input type="radio" style="margin-left: 73%;" >
+            </div>
+            <div class="desc_003">
+                
+                    Get upto 500 cashback on minimum transaction of Rs.100 via Amazon Pay. Offer allicable once per user.
+                
+            </div>
+            </div>
+        </div>
+        <div id="phone_001" style="display: flex;margin-top: 15px;">
+            <div class="logoimg_001">
+                <img src="https://cdn.pharmeasy.in/payments/wallet_icons/phonepe.png" alt="">
+            </div>
+            <div class="card_mini">
+            <div class="wallet_002">
+                PhonePe
+                <input type="radio" style="margin-left: 77%;">
+            </div>
+            <div class="desc_003">
+                
+                    Get a scratch card and win  upto 1000 cashback on minimum transaction of Rs.500 via PhonePe wallet only. Offer allicable once per user.
+                
+            </div>
+            </div>
+        </div>
+        <div id="mob_001" style="display: flex;margin-top: 15px;">
+            <div class="logoimg_001">
+                <img src="https://cdn.pharmeasy.in/payments/wallet_icons/mobikwik.png" alt="">
+            </div>
+            <div class="card_mini">
+            <div class="wallet_002">
+                Mobikwik
+                <input type="radio" style="margin-left: 77%;">
+            </div>
+            <div class="desc_003">
+                
+                    Get  upto 500 cashback on minimum transaction of Rs.999 via Mobikwik wallet only. Use code MBK500 on Mobikwik Offer allicable once per user.
+                
+            </div>
+            </div>
+        </div>
+        <div id="other_option">
+            <h2 id="other_option_tag">
+                Other Options
+            </h2>
+            <div class="upi">
+                <div class="upi_000">
+                    <img src="https://cdn.pharmeasy.in/payments/upi.png" alt="">
+                </div>
+                <div class="upi_img">
+                    <h3>UPI</h3>
+                    
+                    <img src="https://consumer-app-images.pharmeasy.in/payment-icons/gpay.png" alt="">
+                    <img src="https://consumer-app-images.pharmeasy.in/payment-icons/bhim.png" alt="">
+                    <img src="https://consumer-app-images.pharmeasy.in/payment-icons/paytmUpi.png" alt="">
+                    <img src="https://consumer-app-images.pharmeasy.in/payment-icons/phonepeUpi.png" alt="">
+                    <span> and more</span>
+                </div>
+                    
+                    
+                
+                    
+    
+            </div>
+            <div>
+                <div class="upi">
+                    <div class="upi_000">
+                        <img src="	https://cdn.pharmeasy.in/payments/wallet.png" alt="">
+                    </div>
+                    <div class="upi_img">
+                        <h3>Wallets</h3>
+                        <img src="https://consumer-app-images.pharmeasy.in/payment-icons/amazonpay.png" alt="">
+                        <img src="https://consumer-app-images.pharmeasy.in/payment-icons/paytmUpi.png" alt="">
+                        <img src="https://consumer-app-images.pharmeasy.in/payment-icons/freecharge-wallet.png" alt="">
+                        <img src="https://consumer-app-images.pharmeasy.in/payment-icons/phonepeUpi.png" alt="">
+                        
+                    </div>
+        
+                </div>
+            </div>
+            <div id="credit_card" style="display: flex;" onclick="display007()">
+                
+                    
+                        <div class="upi_000" >
+                            <img src="	https://cdn.pharmeasy.in/payments/card.png" alt="">
+                        </div>
+                        <div class="upi_img">
+                            <h3>Credit/Debit Card</h3>
+                            <img src="https://consumer-app-images.pharmeasy.in/payment-icons/visa.png" alt="">
+                            <img src="https://consumer-app-images.pharmeasy.in/payment-icons/mastercard-logo.png" alt="">
+                            <img src="https://consumer-app-images.pharmeasy.in/payment-icons/rupay.png" alt="">
+                            <img src="https://consumer-app-images.pharmeasy.in/payment-icons/maestro-logo.png" alt="">
+                            <img src="https://consumer-app-images.pharmeasy.in/payment-icons/dinerCard.png" alt="">
+                            
+                        </div>
+            
+                    
+                
+            </div>
+            <div class="upi">
+                
+                    
+                        
+                <div class="upi_000">
+                    <img src="https://cdn.pharmeasy.in/payments/netbanking.png" alt="">
+                </div>
+                <div class="upi_img">
+                    <h3>Net Banking</h3>
+                    <span>We support over 100 banks</span>
+                                
+                </div>
+                
+             </div>
+           
+             <div class="upi">
+                <div class="upi_000">
+                    <img src="https://consumer-app-images.pharmeasy.in/payment-icons/cod.png" alt="">
+                </div>
+                <div class="upi_img">
+                    <h3>Pay on Delivery</h3>
+                    <span>pay via cash/upi at the time of delivery</span>
+                    <input type="radio" onclick="check()" id="pay_on_delivery">  
+                    <button id="pay_button" onclick="payorder()">Place Order</button>          
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <div id="wallet_007">
+        <div id="wallet_desc">
+            <div style="margin-left: 20px;">
+            <img src="https://assets.pharmeasy.in/web-assets/dist/9abb1d25.svg" alt="">
+            </div>
+            <div style="width: 70%;">
+            <div style="margin-left: 20px; display: flex;justify-content: space-between;width: 100%;">
+            <div>
+            <p style="font-size: 16px; font-weight: bold;display: inline; color: #4F585E; font-family: Open Sans,sans-serif;" >Pharmeasy Wallet</p>
+            </div>
+            <div>
+            <input type="checkbox" id="wallet_check" checked >
+            </div>
+            </div>
+            <u >T&C Apply</u>
+            </div>
+           
+        </div>
+        <div>
+        <div id="pricebreak_007">
+            <span >Price Breakdown</span>
+           
+        </div>
+        <div id="calculation">
+
+        </div>
+        </div>
+
+    </div>
+    <div id="card_box_007">
+    
+     <div id="cancel_007"  onclick="disapear()">&#10006;</div>
+    
+    
+    <div id="card_details_007" >
+        <div id="card_new">Enter New Card</div>
+
+        <p>Card Number</p>
+        <input type="text" id="card_number" placeholder="1234-5678-9876-5432" required maxlength="16">
+        <div style="display: flex;width: 100%;justify-content: space-between; ">
+        <div>
+            <p>Valid Through</p>
+            <input type="text" id="card_validity" placeholder="MM/YY"  >
+        </div>
+        <div>
+            <p>CVV</p>
+            <input type="text" id="cvv" placeholder="123" style="width: 30%;" >
+        </div>
+        </div>
+       
+        <p>Name On Card</p>
+        <input type="text" id="card_name_007" placeholder="e.g. Ravi Kumar"><br>
+        <div style="margin-top: 10px;">
+        <input type="checkbox" id="save_later" >
+        <span>Save this card for future Payment<span>
+        </div>
+
+        <p style="font-size: 12px; margin-left:10px">We Support</p>
+        <div class="upi_img" style="border: 0px;">
+            
+            <img src="https://consumer-app-images.pharmeasy.in/payment-icons/visa.png" alt="">
+            <img src="https://consumer-app-images.pharmeasy.in/payment-icons/mastercard-logo.png" alt="">
+            <img src="https://consumer-app-images.pharmeasy.in/payment-icons/rupay.png" alt="">
+            <img src="https://consumer-app-images.pharmeasy.in/payment-icons/maestro-logo.png" alt="">
+            <img src="https://consumer-app-images.pharmeasy.in/payment-icons/dinerCard.png" alt="">
+            
+        </div>
+        <button id="place_order_007" > Place Order & Pay</button>
+
+        <div style="display: flex;justify-content:space-between;width:100%;margin-top:15px;align-items: center; ">
+        <div >
+            <img src="https://assets.pharmeasy.in/web-assets/dist/f2189b34.svg" alt="">
+        </div>
+       <div style="margin-left: 15px ;">
+        <p>Your card details will be stored securely for your convenience. We do not store CVV.</p>
+        </div>
+    </div>
+        </div>
+    </div>
+
+</div>
+
+  
+
+
+
+
+
+    
+  
+</body>
+</html>
+<script>
+
+    let arr=JSON.parse(localStorage.getItem("adddata"))
+
+    function payorder(){
+        alert("Your Order Placed Sucessfully!")
+        window.location.href="../homepage/index.html"
+    }
+
+    function data(arr){
+        let sum=0
+   
+        
+
+        console.log(arr.price)
+        append(arr.price)
+    }
+    function append(sum){
+        let cart=document.createElement("div")
+        cart.innerText="Cart Value"
+
+        sum1=sum[1]+sum[2]+sum[3]+sum[4]+sum[5]+sum[6];
+        let numcart=document.createElement("div")
+        numcart.innerText=`₹ ${sum1}`
+
+        let cartbox=document.createElement("div")
+        cartbox.setAttribute("class","value_box")
+        cartbox.append(cart,numcart)
+
+        let delivery=document.createElement("div")
+        delivery.innerText="Delivery Charge"
+
+        let del=document.createElement("del")
+        del.innerText=`₹75.00`;
+
+        let span=document.createElement("span")
+        span.innerText="Free"
+        span.setAttribute("id","Span")
+
+        let delbox=document.createElement("div")
+        delbox.append(del,span)
+
+        let delivery_box=document.createElement("div")
+        delivery_box.setAttribute("class","value_box")
+        delivery_box.append(delivery,delbox)
+        
+
+        let line=document.createElement("hr")
+        line.style.display="block"
+
+        let Final=document.createElement("div")
+        Final.innerText="Amount to be paid"
+        
+        
+        let finalvalue=document.createElement("div")
+        finalvalue.innerText=`₹ ${sum1}`
+        
+        let finalbox=document.createElement("div") 
+        finalbox.setAttribute("id","final_007")
+        finalbox.append(Final,finalvalue)
+
+        let total=document.createElement("div")
+        total.innerText=`Total saving of ${del.innerText} on this order`
+        total.setAttribute("id","total_007")
+
+
+        let bigbox=document.createElement("div")
+
+        bigbox.append(cartbox,delivery_box,line,finalbox,total)
+
+        document.getElementById("calculation").append(bigbox)
+
+    
+
+    }
+
+    data(arr)
+
+    document.getElementById("place_order_007").addEventListener("click",order)
+
+    function order(){
+        let card=document.getElementById("card_number").value;
+        let date=document.getElementById("card_validity").value;
+        let cvv =document.getElementById("cvv").value;
+        
+        if(card.length===16){
+            alert("Your Order Placed Sucessfully!")
+            window.location.href="../homepage/index.html"
+        }
+        
+       else{
+        alert("check the card details")
+       }
+       let checkbox=document.getElementById("save_later")
+    }
+
+    function check(){
+        console.log("yes")
+        let delivery=document.getElementById("pay_on_delivery")
+        if(delivery.checked===true){
+            document.getElementById("pay_button").style.display="block"
+            console.log("yes")
+        }
+    }
+    function display007(){
+        document.getElementById("card_box_007").style.zIndex="5"
+        document.getElementById("card_details_007").style.display="block"
+        document.getElementById("cancel_007").style.display="block"
+        
+    }
+
+    function disapear(){
+        document.getElementById("card_box_007").style.zIndex="-2"
+        document.getElementById("card_details_007").style.display="none"
+        document.getElementById("cancel_007").style.display="none"
+    }
+</script>
