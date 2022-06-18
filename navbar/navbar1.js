@@ -21,7 +21,7 @@ function navbar (){
 
             <div id="box6">
                 <div><i class="fa-solid fa-percent"></i><p class="p603">Offers</p></div>
-                <div><i class="fa-solid fa-user"></i><a href="../signup.html"><p class="p603">Signup / Login</p></a> </div>
+                <div><i class="fa-solid fa-user"></i><a href="../Signup/signup.html"><p class="p603">Signup / Login</p></a> </div>
                 <div><i class="fa-solid fa-cart-shopping"></i> <p class="p603">Cart</p></div>
             </div>
         </div>

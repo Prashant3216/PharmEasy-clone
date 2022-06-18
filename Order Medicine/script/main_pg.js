@@ -1,5 +1,5 @@
 var img604=document.getElementById("img604")
-img604.src="./images/4.jpg"
+img604.src="https://consumer-app-images.pharmeasy.in/marketing/comp_3step.jpg"
 var counter=1;
 function set_time(){
   setInterval(image_show,3000);
@@ -9,26 +9,25 @@ function image_show(){
   var image_data;
   
     if(counter==1){
-      image_data="./images/1.jpg"
-      img604.src=""+image_data;
+      img604.src="https://consumer-app-images.pharmeasy.in/marketing/comp_india_covered.jpg";
     }
 
     else if(counter==2){
-      image_data="./images/2.jpg"
-      img604.src=""+image_data;
+      // image_data="./images/2.jpg"
+      img604.src="https://consumer-app-images.pharmeasy.in/marketing/comp_cod.jpg";
     }
     else if(counter==3){
-      image_data="./images/3.jpg"
-      img604.src=""+image_data;
+      // image_data="./images/3.jpg"
+      img604.src="https://consumer-app-images.pharmeasy.in/marketing/comp_3step.jpg";
     }
     else if(counter==4){
-      image_data="./images/4.jpg"
-      img604.src=""+image_data;
+      // image_data="./images/4.jpg"
+      img604.src="https://consumer-app-images.pharmeasy.in/marketing/comp_50lac.jpg";
     }
     else{
       counter=1;
-      image_data="./images/3.jpg"
-      img604.src=""+image_data;
+      // image_data="./images/3.jpg"
+      img604.src="https://consumer-app-images.pharmeasy.in/marketing/comp_cod.jpg";
     }
   
     counter++;

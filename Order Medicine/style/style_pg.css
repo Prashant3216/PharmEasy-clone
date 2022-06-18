@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 /* #navcontainer{
     height:120px;
@@ -489,6 +490,7 @@ span{
     padding: 2% 4%;
     /* margin: 30px 0 0 0; */
     background-color:  #f2f5f5;
+    
     /* border:1px solid red; */
 }
 #footer1564{

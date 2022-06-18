@@ -330,7 +330,7 @@
         margin-left: -10px;
         background-color: #10847e;
        }
-       #navbar>img{
+       #navbar>a>img{
         width: 165px;
         height: 50.89px;
         margin-left: 50px;
@@ -349,10 +349,10 @@
 </head>
 <body>
     <div id="navbar">
-        <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt="">
+       <a href="../homepage/index.html"><img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt=""></a>
         
             <div id="secure">
-                100% Secure Paayments
+                100% Secure Payments
             </div>
        
 
@@ -617,6 +617,7 @@
 
     function payorder(){
         alert("Your Order is Sucessfully Placed")
+        window.location.href="../homepage/index.html"
     }
 
     function data(arr){
@@ -631,8 +632,9 @@
         let cart=document.createElement("div")
         cart.innerText="Cart Value"
 
+        sum1=sum[1]+sum[2]+sum[3]+sum[4]+sum[5]+sum[6];
         let numcart=document.createElement("div")
-        numcart.innerText=`₹ ${sum}`
+        numcart.innerText=`₹ ${sum1}`
 
         let cartbox=document.createElement("div")
         cartbox.setAttribute("class","value_box")
@@ -642,7 +644,7 @@
         delivery.innerText="Delivery Charge"
 
         let del=document.createElement("del")
-        del.innerText=`₹${Math.floor(Math.random() * 60) + 18}.00`;
+        del.innerText=`₹75.00`;
 
         let span=document.createElement("span")
         span.innerText="Free"
@@ -662,9 +664,9 @@
         let Final=document.createElement("div")
         Final.innerText="Amount to be paid"
         
-
+        
         let finalvalue=document.createElement("div")
-        finalvalue.innerText=`₹ ${sum}`
+        finalvalue.innerText=`₹ ${sum1}`
         
         let finalbox=document.createElement("div") 
         finalbox.setAttribute("id","final_007")

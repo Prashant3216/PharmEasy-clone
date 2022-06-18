@@ -21,7 +21,7 @@ var btn=document.createElement("button")
 btn.innerText="Proceed to buy"
 btn.setAttribute("id","btn1")
 btn.addEventListener("click",function(){
-    window.location.href=""
+    window.location.href="../paymentpage/payment.html"
 })
 
 let div=document.createElement("div")
