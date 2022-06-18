@@ -616,7 +616,7 @@
     let arr=JSON.parse(localStorage.getItem("adddata"))
 
     function payorder(){
-        alert("Your Order is Sucessfully Placed")
+        alert("Your Order Placed Sucessfully!")
         window.location.href="../homepage/index.html"
     }
 
@@ -697,7 +697,8 @@
         let cvv =document.getElementById("cvv").value;
         
         if(card.length===16){
-            alert("Order Sucessfully Placed")
+            alert("Your Order Placed Sucessfully!")
+            window.location.href="../homepage/index.html"
         }
         
        else{
