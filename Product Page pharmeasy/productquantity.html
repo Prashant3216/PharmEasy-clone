@@ -19,6 +19,7 @@
 
       }
       #header{
+        /* width: 100%; */
           position: sticky;
           top: 0px;
           height:123px;
@@ -43,9 +44,10 @@
           width:80%;
       }
       #box11>a>img{
-          display: block;
+          /* display: flex; */
           width: 60%;
-          height: 80px;
+          height: 70px;
+          /* justify-content: right; */
       }
       #box2>div{
           /* border:1px solid red; */
@@ -130,6 +132,85 @@
           color: white;
 
       }
+      /* footer */
+      #footer1563{
+    width: 92%;
+    height: 300px;
+    padding: 2% 4%;
+    margin: 30px 0 0 0;
+    background-color:  #f2f5f5;
+}
+#footer1564{
+    display: flex;
+    width:320px;
+    justify-content: space-between;
+}
+.footer1565{
+    width: 150px;
+}
+.footer1565>a>img{
+    width: 150px;
+    height: fit-content;
+}
+#footer1566{
+    color: #4f585e;
+    margin-bottom: 100px;
+}
+#footer1567{
+    color: #4f585e;
+    margin-bottom: 20px;
+}
+#footer1568{
+    display: flex;
+    width:92%;
+    /* height: 600px; */
+    background-color: #f4f7fb;
+    padding: 2% 4%;
+    justify-content: space-between;
+}
+.footer1569{
+    width:320px;
+    /* border: 1px solid red; */
+    line-height: 35px;
+}
+#footer1573{
+    display: flex;
+    /* width: 320px; */
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+}
+.footer1570{
+    width:70px;
+    /* color: #10847e; */
+    border-radius: 50%;
+     /* border: 1px solid red; */
+    
+
+}
+.footer1570>img{
+    width: 100%;
+    border-radius: 50%;
+    height: fit-content;
+
+}
+#Partner1571{
+width: 100%;
+padding: 10px 4% 30px 4%;
+
+/* border: 1px solid red; */
+background-color:  #f4f7fb;
+color:#4f585e;
+line-height: 30px
+}
+#Partner1572{
+    display: flex;
+    width:55%;
+    justify-content: space-between;
+}
+#Partner1572>img{
+    width:50px;
+    height: 25px;
+}
       
   </style>
     
@@ -239,7 +320,8 @@
    <p style="margin-left: 100px">If the seal is broken it will be non-returnable</p><br>
 
 </div>
-
+    <!-- *****************footer************************ -->
+    <div class="footer1563">
 </body>
 </html>
 <script src="./productquantity.js"></script>
@@ -247,4 +329,9 @@
   import navbar from "./navbar.js"
   var header=document.querySelector("#header");
   header.innerHTML=navbar();
+
+  import footer from "../components/footer.js"
+    let footerdiv=document.querySelector(".footer1563")
+    footerdiv.innerHTML=footer();
+
 </script>

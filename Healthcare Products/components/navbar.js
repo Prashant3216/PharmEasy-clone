@@ -18,10 +18,9 @@ function navbar (){
                 <div> <a href="">Lab Test</a> </div>
                 <div> <a href="">RTPCR</a> </div>
             </div>
-
             <div id="box6">
                 <div><i class="fa-solid fa-percent"></i><p class="p603">Offers</p></div>
-                <div><i class="fa-solid fa-user"></i> <p class="p603">User</p></div>
+                <div><i class="fa-solid fa-user"></i> <p id="p655" class="p603">User</p></div>
                 <div><i class="fa-solid fa-cart-shopping"></i> <p class="p603">Cart</p></div>
             </div>
         </div>
@@ -32,6 +31,8 @@ function navbar (){
 }
 
 export default navbar;
+
+
 
 
 // ******* CSS for Navbar ********

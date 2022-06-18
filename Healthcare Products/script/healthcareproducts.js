@@ -51,4 +51,9 @@ function image_show(){
   
 }
 
+let username=JSON.parse(localStorage.getItem("userData"))
+let p=document.getElementById("box655")
+// console.log(username.name)
+// p.innerText=username.name;
+
 

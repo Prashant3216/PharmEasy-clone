@@ -72,7 +72,7 @@
                 <h2 id="h602">Search for Medicines / Healthcare Products</h2>
                 <div id="box619">
                     <input type="text" id="input601" placeholder="Enter Pin Code">
-                    <input id="input602" type="text" oninput="debouncing(main,1000)" onclick="show()" placeholder="Search for Medicines / Healthcare Products">
+                    <input id="input602" type="text" oninput="debouncing(main,1000)" placeholder="Search for Medicines / Healthcare Products">
                     <button id="btn603"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
 
@@ -268,6 +268,11 @@
     </div>
 </div>
 
+<!-- *************************footer************************ -->
+
+<div class="footer1563">
+
+</div>
 
 
 
@@ -279,3 +284,8 @@
 </body>
 </html>
 <script src="../Order Medicine/script/main_pg.js"></script>
+<script type="module">
+    import footer from "../components/footer.js"
+    let footerdiv=document.querySelector(".footer1563")
+    footerdiv.innerHTML=footer();
+</script>

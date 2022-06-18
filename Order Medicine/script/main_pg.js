@@ -164,6 +164,10 @@ function append(data){
     let p=document.createElement("p")
     p.innerText=el.title;
     p.setAttribute("id","p650")
+    p.addEventListener("click",function(){
+      adddata(el);
+      window.location.href="../Product Page pharmeasy/productquantity.html"
+    })
 
     box651.append(p)
 
@@ -185,6 +189,12 @@ id= setTimeout(function(){
 },delay)
 }
 
+function adddata(el){
+
+  let x=el;
+
+  localStorage.setItem("quantity",JSON.stringify(x))
+}
 
 
 

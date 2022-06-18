@@ -1,4 +1,5 @@
 var data=JSON.parse(localStorage.getItem("quantity"));
+console.log('data:', data)
 appenddata(data);
 
 function appenddata(data){
