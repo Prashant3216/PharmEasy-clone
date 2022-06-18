@@ -33,12 +33,16 @@ addcontainer.append(image,div);
 
 
 let data1=JSON.parse(localStorage.getItem("adddata"))
+
+data5=data1.price[1]+data1.price[2]+data1.price[3]+data1.price[4]+data1.price[5]+data1.price[6];
+console.log(data5)
 let p690=document.getElementById("p690")
-p690.innerText=data1.price;
+p690.innerText="RS."+data5;
 
-data1.price=data1.price[1]+data1.price[2]+data1.price[3];
 
-data1.price=Number(data1.price)+75;
+data2=data1.price[1]+data1.price[2]+data1.price[3]+data1.price[4]+data1.price[5]+data1.price[6];
+
+data2=Number(data2)+75.00;
 
 let p691=document.getElementById("p691")
-p691.innerText="RS."+(data1.price);
+p691.innerText="RS."+(data2);
