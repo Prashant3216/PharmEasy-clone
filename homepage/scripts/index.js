@@ -1,8 +1,7 @@
-import navbar from "/PharmEasy.com/navbar/navbar1.js"
+import navbar from "/PharmEasy.com/navbar/navbar1.js";
 
-let navb=document.getElementById("navbar1574");
-navb.innerHTML=navbar();
-
+let navb = document.getElementById("navbar1574");
+navb.innerHTML = navbar();
 
 let slideIndex = 0;
 // manual showSlide
@@ -15,7 +14,7 @@ function carosual(val) {
   if (slideIndex < 1) {
     slideIndex = slides.length;
   }
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
     //removing of class "active".
     dots[i].className = dots[i].className.replace(" active", "");
@@ -32,25 +31,22 @@ let currentSlide = (n) => {
   carosual((slideIndex = n));
 };
 
-let prev=document.getElementById("prev1503");
-prev.addEventListener("click", function(){
+let prev = document.getElementById("prev1503");
+prev.addEventListener("click", function () {
   plusSlide(-1);
-})
-let next=document.getElementById("next1504");
-next.addEventListener("click", function(){
+});
+let next = document.getElementById("next1504");
+next.addEventListener("click", function () {
   plusSlide(1);
-})
+});
 
-let dots=document.getElementsByClassName("dots1506");
+let dots = document.getElementsByClassName("dots1506");
 // console.log(dots);
-for(let i=0; i<dots.length; i++){
-dots[i].addEventListener("click",()=>{
-  currentSlide(i+1);
-})
+for (let i = 0; i < dots.length; i++) {
+  dots[i].addEventListener("click", () => {
+    currentSlide(i + 1);
+  });
 }
-
-
-
 
 // automatic showSlide
 
